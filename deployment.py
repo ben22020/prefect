@@ -2,7 +2,7 @@ from prefect import flow
 
 if __name__ == "__main__":
     flow.from_source(
-        source="https://github.com/ben22020/cloud_resume_challenge.git",
+        source="https://github.com/ben22020/prefect.git",
         entrypoint="prefect_tutorial.py:ml_workflow",
     ).deploy(
         name="first-prefect-deployment",
